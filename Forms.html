@@ -9,60 +9,60 @@
 </head>
 
 <body>
-    <h1>Table Practice</h1>
-    <table border="1px">
-        <caption>Family Weight</caption>
-        <thead>
-            <tr>
-                <th rowspan="2">No</th>
-                <th rowspan="2">First Name</th>
-                <th rowspan="2">Middle Name</th>
-                <th rowspan="2">Last Name</th>
-                <th colspan="2">Weight</th>
 
-            </tr>
-            <tr>
-                <th>KG</th>
-                <th>lb</th>
-            </tr>
+    <h2>Sign Up</h2>
+    <form action="About.html">
+        <fieldset style="width:270px">
+            <legend>Sign Up Form</legend>
+            <p>
+                <label for="fname">First Name:</label>
+            </p>
+            <p>
+                <input type="text" placeholder="First Name" id="fname">
+            </p>
+            <p>
+                <label for="lname">Last Name:</label>
+            </p>
+            <p>
+                <input type="text" placeholder="Last Name" id="lname">
+            </p>
+            <p>
+                <label for="password">Password</label>
+            </p>
+            <p>
+                <input type="password" placeholder="Enter Password" id="password">
+            </p>
+            <div>
+                <h4>Select Gender</h4>
+                <input type="radio" id="male" name="gender">
+                <label for="gender">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender">
+                <label for="gender">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="gender">
+                <label for="gender">Prefer not to tell</label>
+            </div>
+            <p>
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement">I agree to the terms and conditions of Assefa Tadesse. See<a href="About.html">
+                        Terms
+                        and
+                        Conditions</a></label>
+            </p>
+            <button>Create Account</button>
+            <p>Continue with google...</p>
+        </fieldset>
 
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Assefa</td>
-                <td>Tadesse</td>
-                <td>Altaye</td>
-                <td>70</td>
-                <td>153</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Fikirte</td>
-                <td>Tefera</td>
-                <td>Hailu</td>
-                <td>55</td>
-                <td>120</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Eliana</td>
-                <td>Assefa</td>
-                <td>Tadesse</td>
-                <td>15</td>
-                <td>40</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Total</td>
-
-                <td colspan="3">3 People</td>
-            </tr>
-        </tfoot>
-
-    </table>
-
+    </form>
+    <div>
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="Seach Google" name="q" type="search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
 </body>
 
 </html>
