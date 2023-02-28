@@ -5,54 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Sign Up Form</title>
 </head>
 
 <body>
 
     <h2>Sign Up</h2>
-    <form action="About.html">
-        <fieldset style="width:270px">
+    <form action="#" method="get" autocomplete="off">
+        <fieldset style="width:320px">
             <legend>Sign Up Form</legend>
             <p>
                 <label for="fname">First Name:</label>
             </p>
             <p>
-                <input type="text" placeholder="First Name" id="fname">
+                <input type="text" placeholder="First Name" id="fname" name="firstname" required>
             </p>
             <p>
                 <label for="lname">Last Name:</label>
             </p>
             <p>
-                <input type="text" placeholder="Last Name" id="lname">
+                <input type="text" placeholder="Last Name" id="lname" name="lastname">
             </p>
             <p>
-                <label for="password">Password</label>
+                <label for="password">Password: </label>
+
+                <input type="password" placeholder="Enter Password" id="password" name="password">
             </p>
             <p>
-                <input type="password" placeholder="Enter Password" id="password">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
             </p>
             <div>
                 <h4>Select Gender</h4>
-                <input type="radio" id="male" name="gender">
+                <input type="radio" id="male" name="male">
                 <label for="gender">Male</label>
             </div>
             <div>
-                <input type="radio" id="female" name="gender">
+                <input type="radio" id="female" name="female">
                 <label for="gender">Female</label>
             </div>
             <div>
-                <input type="radio" id="other" name="gender">
+                <input type="radio" id="other" name="other">
                 <label for="gender">Prefer not to tell</label>
             </div>
+            <label for="select-level">Please select the course you want to take</label>
+            <select name="level" id="select-level">
+                <option value="">--select course--</option>
+                <option value="beginner" selected>Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <p>
+                In order to create account, you have to agree our <a href="About.html"> terms
+                    and conditions</a>
+            </p>
             <p>
                 <input type="checkbox" id="agreement" name="agreement">
-                <label for="agreement">I agree to the terms and conditions of Assefa Tadesse. See<a href="About.html">
-                        Terms
-                        and
-                        Conditions</a></label>
+                <label for="agreement">I agree to the terms and conditions of Assefa Tadesse. </label>
             </p>
-            <button>Create Account</button>
+            <p>Please write your comment here
+                <textarea name="comment" cols="30" rows="3" placeholder="Comment"></textarea>
+            </p>
+            <button type="submit">Create Account</button>
             <p>Continue with google...</p>
         </fieldset>
 
@@ -60,8 +75,13 @@
     <div>
         <form action="https://www.google.com/search">
             <input type="text" placeholder="Seach Google" name="q" type="search">
-            <input type="submit" value="Search">
+            <input type="submit" value="Search Google">
         </form>
+        <form action="https://www.youtube.com/results">
+            <input type="text" placeholder="Search Youtube" name="search_query">
+            <button>Search Youtube</button>
+        </form>
+
     </div>
 </body>
 
