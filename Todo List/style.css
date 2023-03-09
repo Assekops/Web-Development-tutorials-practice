@@ -1,0 +1,11 @@
+ li {
+     border: 2px dotted orange;
+ }
+
+ .completed {
+     text-decoration: line-through;
+ }
+
+ #special {
+     background: lightblue;
+ }

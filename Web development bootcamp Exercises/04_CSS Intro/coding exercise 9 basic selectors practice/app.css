@@ -11,5 +11,12 @@ li {
 /* Make the element with the id of 'clear' have a red BG and white text */
 #clear {
     color: white;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
+    /* rgba color used to demonstrate transparency */
+}
+
+body {
+    background: url(wooden_background.jpg) lightblue;
+    /* if the background image fails to load, the browser will show lightblue color as background */
+    background-size: 100%;
 }

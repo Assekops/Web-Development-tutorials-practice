@@ -1,0 +1,43 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+
+}
+
+#static #middle {
+    position: static;
+    top: 100px
+}
+
+#relative #middle {
+    position: relative;
+    top: 115px;
+    right: -125px;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 100px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid whitesmoke;
+    /* transition: 3s; */
+}
+
+.circle:hover {
+    background-color: rgb(141, 106, 112);
+    border-radius: 50%;
+    transition: 3s;
+}
