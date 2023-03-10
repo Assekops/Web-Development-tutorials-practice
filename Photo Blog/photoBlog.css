@@ -1,0 +1,21 @@
+img {
+    width: 30%;
+    margin: calc(10%/6);
+    /* Three images in a row have margin in both sides> 
+       It means 6 margin.
+       The remining margin of 10% will be divided to 6.
+    */
+    /* This can be used  */
+    /* margin: 1.6666%; */
+
+}
+
+nav {
+    width: 30%;
+    margin-left: calc(10%/6);
+    font-family: 'Prompt', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 3px solid rgb(98, 96, 96);
+    padding: 1.1em 0;
+}
